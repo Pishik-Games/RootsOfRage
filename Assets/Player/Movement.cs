@@ -9,6 +9,9 @@ public class Movement : MonoBehaviour{
     private Rigidbody rigidBody;
     public Animator handAnimator;
     public Animator bodyAnimator;
+    public GameObject pauseUI;
+
+    private bool isOnPause ;
     void Start(){
         rigidBody = GetComponent<Rigidbody>();
     }
@@ -16,7 +19,13 @@ public class Movement : MonoBehaviour{
     void FixedUpdate(){
         movementLogic();
         jumpLogic();
+        
     }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape)){PauseGame();}
+        }
 
     private void movementLogic(){
         
@@ -45,6 +54,18 @@ public class Movement : MonoBehaviour{
                 rigidBody.velocity.z
             );
         }
+    }    
+    private void PauseGame(){
+                if(isOnPause){
+                    Time.timeScale = 1;
+                    isOnPause = false;
+                    pauseUI.SetActive(false);
+                } else {
+                    Time.timeScale = 0;
+                    isOnPause = true;
+                    pauseUI.SetActive(true);
+                }
+        
     }
 
 }
