@@ -16,7 +16,6 @@ public class Movement : MonoBehaviour{
     void FixedUpdate(){
         movementLogic();
         jumpLogic();
-        attackLogic();
     }
 
     private void movementLogic(){
@@ -33,12 +32,6 @@ public class Movement : MonoBehaviour{
         }
     }
 
-    private void attackLogic(){
-
-        if (Input.GetKeyDown("q") ){
-            handAnimator.Play("punch");
-        }
-    }
     private void jumpLogic(){
 
         if (Input.GetKeyDown("space") && (transform.position.y < maxY) ){
