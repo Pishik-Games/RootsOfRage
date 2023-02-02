@@ -3,17 +3,20 @@ using UnityEngine;
 public class Movement : MonoBehaviour{
     
     public float speed = 1f;
-    // public GameObject head;
+    public float jumpPower = 1f;
+    public float maxY = 1f;
+    public GameObject visual;
     private Rigidbody rigidBody;
-
-    // public Animator charecterAnimator;
+    public Animator handAnimator;
+    public Animator bodyAnimator;
     void Start(){
         rigidBody = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate(){
-        // runningAnimationLogic();
         movementLogic();
+        jumpLogic();
+        attackLogic();
     }
 
     private void movementLogic(){
@@ -25,15 +28,30 @@ public class Movement : MonoBehaviour{
         Vector3 moveVector  = transform.TransformDirection(playerInput) * speed;
         rigidBody.velocity = new Vector3(moveVector.x, rigidBody.velocity.y, moveVector.z);
 
-        // if(playerInput != Vector3.zero){
-        //     head.transform.forward = playerInput;
-        // }
+        if(playerInput != Vector3.zero){
+            visual.transform.forward = playerInput;
+        }
     }
 
-    // private void runningAnimationLogic(){
-    //     var len = Vector3.Distance(Vector3.zero, rigidBody.velocity);
-    //     if(len > 1) len = 1;
-    //     charecterAnimator.SetFloat("Speed",len);
-    // }
+    private void attackLogic(){
+
+        if (Input.GetKeyDown("q") ){
+            handAnimator.Play("punch");
+        }
+    }
+    private void jumpLogic(){
+
+        if (Input.GetKeyDown("space") && (transform.position.y < maxY) ){
+            rigidBody.AddForce(new Vector3(0, jumpPower, 0), ForceMode.Impulse);
+            bodyAnimator.Play("jump");
+        }
+        if (rigidBody.velocity.y > (jumpPower)){
+            rigidBody.velocity = new Vector3(
+                rigidBody.velocity.x,
+                jumpPower,
+                rigidBody.velocity.z
+            );
+        }
+    }
 
 }
