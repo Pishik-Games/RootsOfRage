@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FightScene/FightScene.unity
     guid: c3e90ce45ffa6654289f5bb4c0aad834
+  - enabled: 1
+    path: Assets/Scenes/DeadScreen/DeadScreen.unity
+    guid: 087ab49c2f51b925bbd9be400b0d0c95
   m_configObjects: {}

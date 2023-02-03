@@ -10,7 +10,7 @@ class FightSceneManager: MonoBehaviour{
 
     void Update(){
         if(player.transform.position.y<-10){
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(3);
         }
     }
 
