@@ -17,15 +17,16 @@ public class Movement : MonoBehaviour{
     }
 
     void FixedUpdate(){
-        movementLogic();
-        jumpLogic();
+        if(GlobalGameManager.CanPlayerMove){
+            movementLogic();
+            jumpLogic();
+        }
         
     }
 
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape)){PauseGame();}
-        }
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.Escape)){ PauseGame(); }
+    }
 
     private void movementLogic(){
         
@@ -55,16 +56,17 @@ public class Movement : MonoBehaviour{
             );
         }
     }    
+
     private void PauseGame(){
-                if(isOnPause){
-                    Time.timeScale = 1;
-                    isOnPause = false;
-                    pauseUI.SetActive(false);
-                } else {
-                    Time.timeScale = 0;
-                    isOnPause = true;
-                    pauseUI.SetActive(true);
-                }
+        if(isOnPause){
+            Time.timeScale = 1;
+            isOnPause = false;
+            pauseUI.SetActive(false);
+        } else {
+            Time.timeScale = 0;
+            isOnPause = true;
+            pauseUI.SetActive(true);
+        }
         
     }
 
