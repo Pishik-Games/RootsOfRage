@@ -5,11 +5,17 @@ public class Movement : MonoBehaviour{
     public float speed = 1f;
     public float jumpPower = 1f;
     public float maxY = 1f;
+    public GameObject pauseUI;
+    public bool collidedWithEnemy;
     public GameObject visual;
     private Rigidbody rigidBody;
     public Animator handAnimator;
     public Animator bodyAnimator;
-    public GameObject pauseUI;
+
+    public GameObject rageBar;
+    public GameObject collisionWithEnemy;
+
+
 
     private bool isOnPause ;
     void Start(){
@@ -26,6 +32,7 @@ public class Movement : MonoBehaviour{
 
     void Update(){
         if(Input.GetKeyDown(KeyCode.Escape)){ PauseGame(); }
+        IncreaseRagePercent(collidedWithEnemy);
     }
 
     private void movementLogic(){
@@ -66,6 +73,40 @@ public class Movement : MonoBehaviour{
             Time.timeScale = 0;
             isOnPause = true;
             pauseUI.SetActive(true);
+        }
+        
+    }
+
+
+    private void OnTriggerEnter(Collider other){
+        Debug.Log(other.gameObject.name);
+        rageBar.GetComponent<PlayerRageBar>().ragePercent += 10;
+    }
+
+    private void OnCollisionEnter(Collision collision){
+        if (collision.gameObject.name == "EnemyFollower"){
+            collidedWithEnemy = true;
+        } else{
+            collidedWithEnemy = false;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision){
+        if (collision.gameObject.name == "EnemyFollower"){
+            collidedWithEnemy = false;
+        }
+    }
+
+    public void RageZero(){
+        Debug.Log("Finished!"); // TODO finish
+    }
+
+    private void IncreaseRagePercent(bool localBool){
+        if (localBool){
+            rageBar.GetComponent<PlayerRageBar>().ragePercent += 1f;
+            collisionWithEnemy.SetActive(true);
+        } else{
+            collisionWithEnemy.SetActive(false);
         }
         
     }
