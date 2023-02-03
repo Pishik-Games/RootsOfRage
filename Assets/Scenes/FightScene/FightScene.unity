@@ -343,6 +343,54 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4198383248809029767, guid: 06718e275babfdf59b7e655afb6d92b7, type: 3}
   m_PrefabInstance: {fileID: 479215438}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &479215443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479215439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5393cc848475dfa9b8076edcae5bbedc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  start: 0
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.0041656494
+      value: 0
+      inSlope: 2.4639285
+      outSlope: 2.4639285
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.15817674
+      value: 0.4
+      inSlope: -0.06055175
+      outSlope: -0.06055175
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.15753414
+    - serializedVersion: 3
+      time: 0.9874573
+      value: 0.00045776367
+      inSlope: -0.13323995
+      outSlope: -0.13323995
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.21424085
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  duration: 1
+  player: {fileID: 5931152}
 --- !u!1 &508638064
 GameObject:
   m_ObjectHideFlags: 0

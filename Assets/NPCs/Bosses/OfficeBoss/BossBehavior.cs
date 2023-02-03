@@ -18,9 +18,9 @@ public class BossBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating(nameof(MakeProjectiles), 0, 1f);
+        InvokeRepeating(nameof(MakeProjectiles), 2, 1f);
 
-        InvokeRepeating(nameof(MakeEnemyFollow), 0, 20f);
+        InvokeRepeating(nameof(MakeEnemyFollow), 2, 20f);
     }
 
     // Update is called once per frame

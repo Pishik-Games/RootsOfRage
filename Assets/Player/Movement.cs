@@ -82,6 +82,8 @@ public class Movement : MonoBehaviour{
     private void OnTriggerEnter(Collider other){
         Debug.Log(other.gameObject.name);
         rageBar.GetComponent<PlayerRageBar>().ragePercent += 10;
+        Destroy(other.gameObject);
+        GetComponentInChildren<ScreenShake>().start = true;
     }
 
     private void OnCollisionEnter(Collision collision){
