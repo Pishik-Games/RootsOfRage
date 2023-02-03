@@ -473,7 +473,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4198383249507097311}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 5d46d28ad4615ef1382facc363229a94, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -493,11 +493,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpPower: 10
+  jumpPower: 5
   maxY: 1.5
   visual: {fileID: 4198383248617328125}
   handAnimator: {fileID: 4198383249506448603}
   bodyAnimator: {fileID: 4198383248515574344}
+  pauseUI: {fileID: 0}
 --- !u!54 &4198383249507097310
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ public class Attack : MonoBehaviour{
 
     private void attackLogic(){
 
-        if (Input.GetKeyDown("q") ){
+        if (Input.GetKeyDown(KeyCode.Mouse0) ){
             handAnimator.Play("punch");
             isActive = true;
             Invoke(nameof(deactive),0.2f);

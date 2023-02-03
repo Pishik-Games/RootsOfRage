@@ -1533,9 +1533,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Rage Roots
-
-'
+  m_Text: Roots of Rage!!
 --- !u!222 &971762750
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2475,7 +2473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1703371078}
   m_Layer: 0
-  m_Name: AbuseRoots
+  m_Name: RootsOfRages
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
