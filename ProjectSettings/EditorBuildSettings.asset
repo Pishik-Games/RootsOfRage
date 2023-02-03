@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeadScreen/DeadScreen.unity
     guid: 087ab49c2f51b925bbd9be400b0d0c95
+  - enabled: 1
+    path: Assets/Scenes/LastCutSeen/LastScene.unity
+    guid: 5e515897679b1b357b3113aa4e64323d
   m_configObjects: {}

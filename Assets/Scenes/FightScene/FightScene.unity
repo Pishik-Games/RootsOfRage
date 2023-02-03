@@ -282,15 +282,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4198383249507097305, guid: 06718e275babfdf59b7e655afb6d92b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.36
+      value: 2.43
       objectReference: {fileID: 0}
     - target: {fileID: 4198383249507097305, guid: 06718e275babfdf59b7e655afb6d92b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.04
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 4198383249507097305, guid: 06718e275babfdf59b7e655afb6d92b7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.93
+      value: -23.03
       objectReference: {fileID: 0}
     - target: {fileID: 4198383249507097305, guid: 06718e275babfdf59b7e655afb6d92b7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1246,10 +1246,10 @@ MonoBehaviour:
   enemyFollower: {fileID: 2766604587056116811, guid: 4caf12411a0da183499ea212a5cc19f1, type: 3}
   mainCamera: {fileID: 479215439}
   player: {fileID: 5931152}
-  numberOfProjectiles: 3
+  numberOfProjectiles: 18
   numberOfEnemyFollower: 1
   health: 1000
-  degrees: 45
+  degrees: 40
 --- !u!1001 &5605337141334947699
 PrefabInstance:
   m_ObjectHideFlags: 0

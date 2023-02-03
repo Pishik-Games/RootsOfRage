@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e4f215864b4e674cb7f2cec5ed90a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5
+  movementSpeed: 10
   mainCamera: {fileID: 0}
   moveTowards: {x: 0, y: 0, z: 0}
 --- !u!1 &2831723347190892655

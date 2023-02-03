@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour{
     
@@ -98,7 +99,7 @@ public class Movement : MonoBehaviour{
     }
 
     public void RageZero(){
-        Debug.Log("Finished!"); // TODO finish
+        SceneManager.LoadScene(4);
     }
 
     private void IncreaseRagePercent(bool localBool){
