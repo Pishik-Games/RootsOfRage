@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 class FightSceneManager: MonoBehaviour{
 
     public GameObject player;
+
     void Start(){
         GlobalGameManager.CanPlayerMove = true;   
     }
