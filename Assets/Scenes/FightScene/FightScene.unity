@@ -1294,10 +1294,10 @@ MonoBehaviour:
   enemyFollower: {fileID: 2766604587056116811, guid: 4caf12411a0da183499ea212a5cc19f1, type: 3}
   mainCamera: {fileID: 479215439}
   player: {fileID: 5931152}
-  numberOfProjectiles: 18
+  numberOfProjectiles: 20
   numberOfEnemyFollower: 1
   health: 1000
-  degrees: 40
+  degrees: 30
 --- !u!1001 &5605337141334947699
 PrefabInstance:
   m_ObjectHideFlags: 0
