@@ -32,10 +32,10 @@ From Iran? Make sure you have anti filter on ;)
 <br><br>
 
 # Developers
-1. <a href="https://ali77gh.ir">Ali Ghahremani</a> (Code Writer)
+1. <a href="https://ali77gh.ir">Ali Ghahremani</a> (Code Writer, Animator)
 <br><br>
-2. <a href="https://instagram.com/mat.in_gh">Matin Ghahremani</a> (3D Designer)
+2. <a href="https://instagram.com/mat.in_gh">Matin Ghahremani</a> (3D Designer, Level Designer)
 <br><br>
-3. <a href="https://github.com/pharakh">Omid Ghahremani</a> (Another Code Writer)
+3. <a href="https://github.com/pharakh">Omid Tavakoli</a> (Code Writer)
 <br><br>
-4. <a href="https://github.com/LordEvil1">Mahdi Ghahremani</a> (Animator and Code Writer)
+4. <a href="https://github.com/LordEvil1">Mahdi Khojaste</a> (Animator and Code Writer)
